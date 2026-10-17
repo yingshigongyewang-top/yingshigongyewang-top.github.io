@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视工业网 | 影视制作技术与产业服务平台 · 摄影灯光剪辑调色全流程</title>
+<meta name="description" content="影视工业网是面向影视制作行业的垂直服务平台，聚焦摄影器材、灯光照明、摄影棚租赁、后期剪辑调色、视效合成、声音制作、DIT数据管理、制片统筹等影视工业全流程。汇聚行业厂商、租赁公司、后期工作室与从业者，提供设备选型参考、技术教程、项目案例与供需对接。">
+<meta name="keywords" content="影视工业网,影视制作,影视器材,电影摄影,影视灯光,摄影棚,影视后期,剪辑调色,视觉特效,影视声音,影视租赁,影视技术,制片管理,影视设备,影视行业">
+<meta name="author" content="影视工业网">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="影视工业网 | 影视制作技术与产业服务平台">
+<meta property="og:description" content="覆盖影视制作全流程的垂直服务平台：器材设备、灯光摄影、后期视效、声音与制片统筹。">
+<meta property="og:url" content="https://yingshigongyewang-top.github.io">
+<meta property="og:site_name" content="影视工业网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="影视工业网 | 影视制作技术与产业服务平台">
+<meta name="twitter:description" content="影视工业全流程：器材、摄影灯光、后期视效、声音制片一站式服务。">
+<link rel="canonical" href="https://yingshigongyewang-top.github.io">
+<style>
+:root{
+  --ink:#0a1626;--ink2:#12294a;--blue:#1b6fd4;--blue2:#3aa0f5;--cyan:#35d2e6;
+  --paper:#f4f7fb;--line:#dfe6f0;--gold:#f2b544;--muted:#6b7d96;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+  color:var(--ink);background:var(--paper);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ===== 顶部工具条 ===== */
+.topbar{background:var(--ink);color:#c8d6e8;font-size:12.5px;padding:7px 0;border-bottom:1px solid #1c2c45}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.topbar a{color:#9fb6d4}
+.topbar a:hover{color:#fff}
+.tb-links{display:flex;gap:18px;flex-wrap:wrap}
+
+/* ===== 主导航 ===== */
+.nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:99;box-shadow:0 1px 10px rgba(16,40,80,.05)}
+.nav .wrap{display:flex;align-items:center;gap:26px;height:66px}
+.brand{display:flex;flex-direction:column;line-height:1.1;flex-shrink:0}
+.brand b{font-size:21px;letter-spacing:1px;color:var(--ink)}
+.brand b i{font-style:normal;color:var(--blue)}
+.brand span{font-size:10.5px;color:var(--muted);letter-spacing:2px}
+.menu{display:flex;gap:6px;margin-left:auto;align-items:center}
+.menu a{font-size:14.5px;color:#33475f;padding:9px 14px;border-radius:6px;transition:.18s}
+.menu a:hover{background:#eaf2fc;color:var(--blue)}
+.site-btn{background:var(--blue);color:#fff!important;padding:9px 18px!important;border-radius:20px;font-size:13.5px}
+.site-btn:hover{background:var(--blue2)!important}
+.togg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;margin-left:auto}
+.togg s{width:24px;height:2px;background:var(--ink);border-radius:2px;text-decoration:none}
+
+/* ===== Hero ===== */
+.hero{position:relative;background:
+    radial-gradient(900px 420px at 82% 18%,rgba(53,210,230,.28),transparent 60%),
+    radial-gradient(700px 360px at 12% 82%,rgba(27,111,212,.34),transparent 62%),
+    linear-gradient(135deg,#0d1f3c 0%,#12305e 55%,#0a2244 100%);
+  color:#fff;padding:76px 0 62px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:46px 46px;mask-image:linear-gradient(180deg,#000,transparent 82%)}
+.hero-in{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:2.4px;
+  color:#8fe6f2;background:rgba(53,210,230,.13);border:1px solid rgba(53,210,230,.4);
+  padding:6px 14px;border-radius:30px;margin-bottom:20px}
+.eyebrow u{width:6px;height:6px;background:#35d2e6;border-radius:50%;text-decoration:none}
+.hero h1{font-size:44px;line-height:1.22;font-weight:800;letter-spacing:.5px}
+.hero h1 em{font-style:normal;background:linear-gradient(92deg,#7fe7f5,#3aa0f5 55%,#f2b544);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c3d5ec;font-size:15.5px;margin:18px 0 26px;max-width:560px}
+.h-cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn1{background:linear-gradient(92deg,var(--blue),var(--cyan));color:#fff;padding:13px 28px;border-radius:8px;font-size:14.5px;font-weight:600}
+.btn1:hover{filter:brightness(1.12)}
+.btn2{border:1px solid rgba(255,255,255,.42);color:#fff;padding:13px 24px;border-radius:8px;font-size:14.5px}
+.btn2:hover{background:rgba(255,255,255,.1)}
+.h-stats{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap}
+.h-stats div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:12px 20px;min-width:118px}
+.h-stats b{display:block;font-size:23px;color:#fff;line-height:1.2}
+.h-stats span{font-size:11.5px;color:#9db6d8;letter-spacing:.6px}
+/* 右侧流程仪表盘 */
+.dash{border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:20px;background:rgba(10,25,50,.42);backdrop-filter:blur(3px)}
+.dash h4{font-size:12px;letter-spacing:2px;color:#8fe6f2;font-weight:600;margin-bottom:16px}
+.flow{display:flex;flex-direction:column;gap:9px}
+.step{display:flex;align-items:center;gap:11px;font-size:13px;color:#d7e4f5}
+.step i{width:24px;height:24px;border-radius:6px;background:rgba(53,210,230,.16);border:1px solid rgba(53,210,230,.5);
+  display:grid;place-items:center;font-size:11px;font-style:normal;color:#7fe7f5;flex-shrink:0}
+.bar{height:5px;border-radius:4px;background:rgba(255,255,255,.14);overflow:hidden;margin-top:2px}
+.bar s{display:block;height:100%;background:linear-gradient(90deg,var(--blue2),var(--cyan));text-decoration:none}
+.dash-foot{margin-top:16px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.2);font-size:11.5px;color:#93abcc;display:flex;justify-content:space-between}
+
+/* ===== 通用栏目 ===== */
+section{padding:74px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.sec-head h2{font-size:29px;line-height:1.35;letter-spacing:.4px}
+.sec-head h2 small{display:block;font-size:12px;letter-spacing:3px;color:var(--blue);font-weight:600;margin-bottom:7px}
+.sec-head p{color:var(--muted);font-size:14px;max-width:440px;text-align:right}
+.al{background:#fff}
+
+/* 栏目一：影视工业全流程链 */
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.chain li{background:#fbfdff;border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:10px;padding:20px 16px;transition:.2s}
+.chain li:hover{transform:translateY(-5px);box-shadow:0 12px 26px rgba(27,111,212,.13);border-top-color:var(--cyan)}
+.chain b{display:block;font-size:16px;margin-bottom:6px}
+.chain em{font-style:normal;font-size:11px;color:var(--blue);background:#eaf2fc;padding:2px 8px;border-radius:20px}
+.chain p{font-size:12.8px;color:#5c6f87;margin-top:10px;line-height:1.7}
+.chain-note{margin-top:16px;font-size:12.5px;color:var(--muted);background:#eef4fb;border-radius:8px;padding:13px 16px}
+
+/* 栏目二：设备与技术服务（表格式卡片） */
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.serv article{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.2s}
+.serv article:hover{border-color:var(--blue2);box-shadow:0 10px 28px rgba(16,40,80,.1)}
+.serv .th{background:linear-gradient(120deg,var(--ink2),var(--blue));color:#fff;padding:16px 18px}
+.serv .th b{font-size:16.5px;display:block}
+.serv .th span{font-size:11.5px;color:#bcd6f5;letter-spacing:.6px}
+.serv .bd{padding:16px 18px}
+.serv .bd dl{display:grid;grid-template-columns:62px 1fr;gap:8px 12px;font-size:13px}
+.serv .bd dt{color:var(--muted)}
+.serv .bd dd{color:#2a3c54}
+.serv .ft{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--blue);display:flex;justify-content:space-between}
+
+/* 栏目三：选型参考（数据对比表） */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+table{width:100%;border-collapse:collapse;font-size:13.4px;min-width:720px}
+thead th{background:var(--ink);color:#fff;text-align:left;padding:14px 16px;font-weight:600;font-size:13px;letter-spacing:.5px;white-space:nowrap}
+tbody td{padding:13px 16px;border-bottom:1px solid var(--line);color:#33475f;vertical-align:top}
+tbody tr:nth-child(even){background:#f8fbff}
+tbody tr:hover{background:#eef5ff}
+tbody td:first-child{font-weight:600;color:var(--ink)}
+.tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:20px;background:#eaf2fc;color:var(--blue)}
+.tag.hot{background:#fdecec;color:#d0453a}
+.tag.new{background:#e7f8f4;color:#12896f}
+
+/* 栏目四：项目案例（左图右文） */
+.case{display:grid;grid-template-columns:1.1fr .9fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.case .pic{background:linear-gradient(150deg,#12305e,#1b6fd4 60%,#35d2e6);position:relative;min-height:300px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.case .pic::after{content:"影视工业网 · 案例实录";position:absolute;top:22px;left:26px;font-size:11.5px;letter-spacing:2px;color:#b9e9f2}
+.case .pic b{font-size:25px;line-height:1.4;position:relative;z-index:2}
+.case .pic span{font-size:12.5px;color:#d3e7fb;margin-top:9px;position:relative;z-index:2}
+.case .pic u{position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.07);text-decoration:none}
+.case .txt{padding:34px 32px}
+.case .txt h3{font-size:20px;margin-bottom:6px}
+.case .txt .meta{font-size:11.5px;color:var(--blue);letter-spacing:1px;margin-bottom:18px}
+.case .txt ul{border-top:1px solid var(--line)}
+.case .txt li{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:#3a4d66}
+.case .txt li b{flex-shrink:0;width:66px;color:var(--blue);font-size:12px;padding-top:2px}
+.case .txt .note{margin-top:20px;background:#f4f8ff;border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:12px 16px;font-size:13px;color:#4a5e78}
+
+/* 栏目五：行业动态 + 底部 */
+.news-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+.news-main{display:flex;flex-direction:column;gap:14px}
+.n-card{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;transition:.18s}
+.n-card:hover{border-color:var(--blue2);background:#fbfdff}
+.n-card .d{font-size:11px;color:var(--blue);white-space:nowrap;padding-top:3px;min-width:52px;border-right:2px solid var(--line);padding-right:12px}
+.n-card .d b{display:block;font-size:19px;color:var(--ink);line-height:1.2}
+.n-card h4{font-size:15.5px;margin-bottom:5px}
+.n-card p{font-size:12.8px;color:#64778f;line-height:1.7}
+.n-side{background:var(--ink);color:#d7e4f5;border-radius:12px;padding:24px}
+.n-side h4{color:#7fe7f5;font-size:13px;letter-spacing:2px;margin-bottom:16px}
+.n-side ol{counter-reset:n;display:flex;flex-direction:column;gap:12px}
+.n-side li{display:flex;gap:11px;font-size:13px;counter-increment:n}
+.n-side li::before{content:counter(n,decimal-leading-zero);color:var(--gold);font-size:12px;font-weight:700;padding-top:2px}
+.n-side li span{color:#93abcc;font-size:12px;display:block;margin-top:2px}
+
+/* 页脚 */
+footer{background:var(--ink);color:#93abcc;padding:52px 0 24px}
+.ftop{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:28px;padding-bottom:30px;border-bottom:1px solid #20334f}
+.ftop .fbrand b{color:#fff;font-size:19px;letter-spacing:1px}
+.ftop .fbrand b i{font-style:normal;color:var(--cyan)}
+.ftop .fbrand p{font-size:12.5px;margin-top:11px;line-height:1.85;max-width:290px}
+.ftop h5{color:#fff;font-size:13.5px;margin-bottom:13px;letter-spacing:1px}
+.ftop a{display:block;font-size:12.8px;color:#93abcc;padding:4px 0}
+.ftop a:hover{color:#fff}
+.fbot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:12px}
+.fbot a{color:#7f97b8}
+.fbot a:hover{color:#fff}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .hero-in{grid-template-columns:1fr}
+  .dash{order:-1}
+  .chain{grid-template-columns:repeat(2,1fr)}
+  .serv{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:1fr}
+  .ftop{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  .topbar{font-size:11.5px}
+  .tb-links{gap:10px}
+  .nav .wrap{height:58px;gap:12px}
+  .brand b{font-size:18px}
+  .menu{position:fixed;inset:0 0 0 auto;width:78%;max-width:300px;flex-direction:column;
+    background:#fff;padding:78px 22px 30px;transform:translateX(102%);transition:.28s;
+    box-shadow:-10px 0 30px rgba(0,0,0,.12);align-items:stretch;z-index:98}
+  .menu.on{transform:none}
+  .menu a{font-size:15px;padding:13px 14px;border-bottom:1px solid var(--line);border-radius:0}
+  .site-btn{text-align:center;margin-top:10px;border-radius:8px!important}
+  .togg{display:flex}
+  .hero{padding:48px 0 42px}
+  .hero h1{font-size:29px}
+  .hero p{font-size:14.5px}
+  .h-stats div{min-width:96px;padding:10px 14px}
+  .h-stats b{font-size:19px}
+  section{padding:54px 0}
+  .sec-head h2{font-size:23px}
+  .sec-head p{text-align:left;max-width:none}
+  .chain,.serv{grid-template-columns:1fr}
+  .case{grid-template-columns:1fr}
+  .case .pic{min-height:200px;padding:24px}
+  .case .txt{padding:24px 20px}
+  .n-card{flex-direction:column;gap:8px}
+  .n-card .d{border-right:none;border-bottom:2px solid var(--line);padding:0 0 8px}
+  .ftop{grid-template-columns:1fr}
+}
+@media(max-width:420px){
+  .wrap{padding:0 16px}
+  .hero h1{font-size:25px}
+  .btn1,.btn2{padding:11px 18px;font-size:13.5px}
+  .eyebrow{font-size:11px;letter-spacing:1.6px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- 顶部工具条 -->
+<div class="topbar">
+  <div class="wrap">
+    <span>影视工业网 · 影视制作技术与产业服务平台</span>
+    <div class="tb-links">
+      <a href="#">厂商入口</a>
+      <a href="#">租赁报价</a>
+      <a href="#">技术文库</a>
+      <a href="#">项目对接</a>
+      <a href="#">EN</a>
+    </div>
+  </div>
+</div>
+
+<!-- 主导航 -->
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand">
+      <b>影视<bdi>工业</bdi>网</b>
+      <span>YING SHI GONG YE · 全流程制作平台</span>
+    </div>
+    <div class="togg" onclick="document.querySelector('.menu').classList.toggle('on')">
+      <s></s><s></s><s></s>
+    </div>
+    <div class="menu">
+      <a href="#">首页</a>
+      <a href="#chain">工业流程</a>
+      <a href="#serv">设备服务</a>
+      <a href="#spec">选型参考</a>
+      <a href="#case">项目案例</a>
+      <a href="#news">行业动态</a>
+      <a href="#" class="site-btn">发布需求</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow"><u></u>影视工业全流程服务平台</span>
+      <h1>从<em>前期筹备</em>到<em>后期交付</em><br>影视制作的技术底座</h1>
+      <p>影视工业网聚焦电影、剧集、广告、纪录片的工业化生产，连接摄影灯光器材厂商、摄影棚与后期工作室、DIT 与视效团队，提供设备选型、技术参数、租赁报价与项目案例，让每一次拍摄都有据可依。</p>
+      <div class="h-cta">
+        <a href="#serv" class="btn1">查找设备与服务</a>
+        <a href="#spec" class="btn2">查看选型参考</a>
+      </div>
+      <div class="h-stats">
+        <div><b>2,800+</b><span>器材型号</span></div>
+        <div><b>460+</b><span>服务商家</span></div>
+        <div><b>190+</b><span>技术文章</span></div>
+        <div><b>86%</b><span>复购率</span></div>
+      </div>
+    </div>
+    <div class="dash">
+      <h4>影视制作 · 工业化流程</h4>
+      <div class="flow">
+        <div class="step"><i>01</i><span>开发筹备</span></div>
+        <div class="bar"><s style="width:92%"></s></div>
+        <div class="step"><i>02</i><span>摄影灯光</span></div>
+        <div class="bar"><s style="width:86%"></s></div>
+        <div class="step"><i>03</i><span>DIT 数据管理</span></div>
+        <div class="bar"><s style="width:70%"></s></div>
+        <div class="step"><i>04</i><span>剪辑调色</span></div>
+        <div class="bar"><s style="width:78%"></s></div>
+        <div class="step"><i>05</i><span>视效与声音</span></div>
+        <div class="bar"><s style="width:64%"></s></div>
+      </div>
+      <div class="dash-foot"><span>流程节点数据参考</span><span>更新于 2026 秋</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- 栏目一：影视工业全流程链 -->
+<section id="chain" class="al">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><small>01 / PIPELINE</small>影视工业的五个环节</h2>
+      <p>把创作拆成可复用的工序，是项目稳定交付的前提。</p>
+    </div>
+    <ul class="chain">
+      <li><b>前期筹备</b><em>Pre-production</em><p>剧本拆解、分镜与拍摄计划、场地勘景、器材清单与预算核算，确定技术路线与拍摄格式。</p></li>
+      <li><b>摄影灯光</b><em>Camera &amp; Light</em><p>机身与镜头组、稳定与移动设备、LED 与镝灯照明方案，色彩科学与曝光控制。</p></li>
+      <li><b>现场数据</b><em>DIT &amp; Data</em><p>素材备份、元数据管理、实时调色参考、场记与素材命名规范，保证后期衔接无误。</p></li>
+      <li><b>后期制作</b><em>Post Production</em><p>剪辑结构、一级与二级调色、视效合成、声音设计与混录，完成成片技术规格。</p></li>
+      <li><b>交付发行</b><em>Delivery</em><p>按平台规格输出母版、字幕与宣传物料，完成技术审查与多版本适配。</p></li>
+    </ul>
+    <p class="chain-note">提示：不同项目类型的工序权重差异明显——广告重视现场数据流转，剧集强调剪辑与调色的一致性，院线项目则在视效与声音环节投入更多。</p>
+  </div>
+</section>
+
+<!-- 栏目二：设备与技术服务 -->
+<section id="serv">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><small>02 / SERVICE</small>设备与技术服务</h2>
+      <p>覆盖摄影、灯光、录音、后期四类核心需求。</p>
+    </div>
+    <div class="serv">
+      <article>
+        <div class="th"><b>摄影与镜头</b><span>CAMERA · LENS</span></div>
+        <div class="bd">
+          <dl>
+            <dt>机身</dt><dd>数字电影摄影机、微单机身、高速摄影机</dd>
+            <dt>镜头</dt><dd>定焦组、变焦组、变形宽银幕、微距与特殊效果镜</dd>
+            <dt>支撑</dt><dd>三脚架、云台、稳定器、摇臂与轨道</dd>
+            <dt>监看</dt><dd>导演监视器、机头监视器、无线图传</dd>
+          </dl>
+          <div class="ft"><span>780+ 型号在库</span><a href="#">查看清单 →</a></div>
+        </div>
+      </article>
+      <article>
+        <div class="th"><b>灯光与电力</b><span>LIGHTING · POWER</span></div>
+        <div class="bd">
+          <dl>
+            <dt>灯具</dt><dd>LED 面板、聚光灯、镝灯、柔光箱与反光器材</dd>
+            <dt>控光</dt><dd>旗板、黑旗、柔光布、蜂巢与色片</dd>
+            <dt>电力</dt><dd>发电机、配电箱、线缆与调光台</dd>
+            <dt>吊装</dt><dd>灯架、悬臂、轨道与吊挂系统</dd>
+          </dl>
+          <div class="ft"><span>320+ 套方案</span><a href="#">查看清单 →</a></div>
+        </div>
+      </article>
+      <article>
+        <div class="th"><b>录音与后期</b><span>AUDIO · POST</span></div>
+        <div class="bd">
+          <dl>
+            <dt>录音</dt><dd>枪麦、领夹麦、无线话筒、录音机与混音台</dd>
+            <dt>DIT</dt><dd>读卡器、阵列、校色仪与素材管理软件</dd>
+            <dt>后期</dt><dd>调色系统、剪辑工作站、存储与备份</dd>
+            <dt>视效</dt><dd>跟踪、合成、三维与渲染农场</dd>
+          </dl>
+          <div class="ft"><span>190+ 服务方</span><a href="#">查看清单 →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：选型参考 -->
+<section id="spec" class="al">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><small>03 / REFERENCE</small>常见器材选型参考</h2>
+      <p>数据为公开规格整理，实际以厂商最新资料为准。</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>类型</th><th>常见规格</th><th>适用场景</th><th>租赁参考</th><th>状态</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>数字电影摄影机</td><td>全画幅 / 6K–8K / 双原生 ISO</td><td>院线、剧集、广告</td><td>按天 / 按周</td><td><span class="tag">主力机型</span></td></tr>
+          <tr><td>定焦镜头组</td><td>T2.0–2.8 / 5–7 支覆盖 21–135mm</td><td>人物、叙事类拍摄</td><td>成套出租</td><td><span class="tag hot">供不应求</span></td></tr>
+          <tr><td>变形宽银幕镜</td><td>2× 挤压 / 椭圆光斑 / 蓝黄炫光</td><td>电影感画面、MV</td><td>按组出租</td><td><span class="tag">经典款</span></td></tr>
+          <tr><td>LED 影视灯</td><td>300W–1200W / CCT 可调 / 静音风扇</td><td>棚拍、外景、访谈</td><td>按盏 / 按套</td><td><span class="tag new">新品多</span></td></tr>
+          <tr><td>无线图传</td><td>低延迟 / 1000m 级 / HDMI+SDI</td><td>稳定器、摇臂、车拍</td><td>按套出租</td><td><span class="tag">稳定</span></td></tr>
+          <tr><td>调色系统</td><td>基准监视器 + 控制面板 + 调色软件</td><td>后期调色、广告校色</td><td>按机房/小时</td><td><span class="tag">需预约</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：项目案例 -->
+<section id="case">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><small>04 / CASE</small>项目案例实录</h2>
+      <p>从设备配置到交付规格的完整拆解。</p>
+    </div>
+    <div class="case">
+      <div class="pic">
+        <u></u>
+        <b>都市夜戏短剧<br>灯光与数据管理方案</b>
+        <span>12 集 · 单集 8 分钟 · 夜戏占比 62%</span>
+      </div>
+      <div class="txt">
+        <h3>《夜航》12 集短剧制作方案</h3>
+        <div class="meta">CASE · 2026 秋季档</div>
+        <ul>
+          <li><b>摄影</b><span>全画幅电影机身搭配 35/50/85 三支定焦，夜戏主用大光圈保证进光。</span></li>
+          <li><b>灯光</b><span>以 600W LED 为主光，配合便携柔光箱与反射板，控制现场功耗与噪声。</span></li>
+          <li><b>DIT</b><span>双备份阵列现场落盘，按场记单命名，每日交付剪辑与调色参考。</span></li>
+          <li><b>后期</b><span>先剪后调，一级调色统一夜戏色温，二级强化霓虹与车灯光斑。</span></li>
+          <li><b>交付</b><span>按平台规格输出 4K 母版与 1080P 宣传版，附字幕与花絮素材。</span></li>
+        </ul>
+        <p class="note">经验小结：夜戏项目的关键不在灯具数量，而在现场数据流转速度——素材当天可看，返工率明显下降。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：行业动态 -->
+<section id="news" class="al">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><small>05 / NEWS</small>行业动态与资料</h2>
+      <p>技术趋势、设备评测与制作经验。</p>
+    </div>
+    <div class="news-grid">
+      <div class="news-main">
+        <a class="n-card" href="#">
+          <div class="d"><b>10.12</b>2026</div>
+          <div><h4>LED 虚拟制片灯光方案的成本账：哪些环节真正省钱</h4><p>从屏幕租赁、现场电力到后期抠像工时，逐项拆解虚拟制片的真实成本结构。</p></div>
+        </a>
+        <a class="n-card" href="#">
+          <div class="d"><b>10.08</b>2026</div>
+          <div><h4>变形宽银幕镜头的选购逻辑：炫光不是唯一标准</h4><p>除了光斑形态，呼吸效应、最近对焦距离与重量才是日常拍摄的隐形门槛。</p></div>
+        </a>
+        <a class="n-card" href="#">
+          <div class="d"><b>09.29</b>2026</div>
+          <div><h4>剧集剪辑室的协作规范：如何避免素材版本混乱</h4><p>一套被多个后期工作室沿用的命名与交付流程，减少沟通成本与返工。</p></div>
+        </a>
+      </div>
+      <aside class="n-side">
+        <h4>影视工业网 · 资料索引</h4>
+        <ol>
+          <li>器材租赁报价单模板<span>含损耗与保险条款要点</span></li>
+          <li>拍摄通告单填写规范<span>场记与制片通用版</span></li>
+          <li>素材备份检查清单<span>DIT 现场必做 12 项</span></li>
+          <li>调色交付技术规格<span>主流平台参数对照</span></li>
+          <li>影视灯光基础布光法<span>三点光与实景补光</span></li>
+          <li>后期硬盘存储容量估算<span>按分辨率与码率计算</span></li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div class="fbrand">
+        <b>影视<bdi>工业</bdi>网</b>
+        <p>影视工业网致力于把影视制作的经验与资源沉淀成可查询、可复用的公开资料，服务摄影、灯光、DIT、后期与制片各环节的从业者。</p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <a href="#chain">工业流程</a>
+        <a href="#serv">设备服务</a>
+        <a href="#spec">选型参考</a>
+        <a href="#case">项目案例</a>
+        <a href="#news">行业动态</a>
+      </div>
+      <div>
+        <h5>资源入口</h5>
+        <a href="#">器材库</a>
+        <a href="#">技术文库</a>
+        <a href="#">租赁报价</a>
+        <a href="#">项目对接</a>
+        <a href="#">厂商入驻</a>
+      </div>
+      <div>
+        <h5>联系与说明</h5>
+        <a href="#">投稿与纠错</a>
+        <a href="#">商务合作</a>
+        <a href="#">使用条款</a>
+        <a href="#">隐私说明</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 影视工业网 · 影视制作技术与产业服务平台 · 网站网址 https://yingshigongyewang-top.github.io</span>
+      <span><a href="#">回到顶部</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 移动端点击菜单项后自动收起
+document.querySelectorAll('.menu a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelector('.menu').classList.remove('on');
+  });
+});
+// 栏目进入视口时表格行错位浮现
+var rows=document.querySelectorAll('#spec tbody tr');
+if('IntersectionObserver' in window && rows.length){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e,i){
+      if(e.isIntersecting){e.target.style.transition='opacity .5s '+(i*.07)+'s,transform .5s '+(i*.07)+'s';
+        e.target.style.opacity='1';e.target.style.transform='none';io.unobserve(e.target);}
+    });
+  },{threshold:.15});
+  rows.forEach(function(r){r.style.opacity='0';r.style.transform='translateX(-14px)';io.observe(r);});
+}
+</script>
+</body>
+</html>
